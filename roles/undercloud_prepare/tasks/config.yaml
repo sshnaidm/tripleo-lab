@@ -1,5 +1,8 @@
 ---
 - name: check dnf presence
+  tags:
+    - lab
+    - undercloud-bootstrap
   stat:
     path: /etc/dnf/dnf.conf
   register: dnf_state
